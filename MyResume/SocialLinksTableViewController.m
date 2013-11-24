@@ -7,6 +7,7 @@
 //
 
 #import "SocialLinksTableViewController.h"
+#import "SocialLinksWebViewController.h"
 
 @interface SocialLinksTableViewController ()
 
@@ -31,6 +32,15 @@
 }
 
 #pragma mark - Table view data source
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    SocialLinksWebViewController *socialLinksWebViewController = segue.destinationViewController;
+    NSIndexPath *indexPathForSelectedCell = [self.tableView indexPathForSelectedRow];
+    NSString *socialURL = [self.socialURLs objectAtIndex:indexPathForSelectedCell.row];
+    socialLinksWebViewController.socialURL = socialURL;
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
