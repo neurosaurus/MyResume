@@ -197,19 +197,53 @@
             </objects>
             <point key="canvasLocation" x="-73" y="1102"/>
         </scene>
-        <!--View Controller - Contact Me-->
+        <!--Contact Me View Controller - Contact Me-->
         <scene sceneID="p1a-u5-LCi">
             <objects>
-                <viewController id="iks-Oy-GfA" sceneMemberID="viewController">
+                <viewController id="iks-Oy-GfA" customClass="ContactMeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="etd-Bv-Ncd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" id="LcR-9M-Wfx">
+                                <rect key="frame" x="20" y="93" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" id="6GH-hu-v3a">
+                                <rect key="frame" x="20" y="141" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hi Tripta," id="efh-at-ZXO">
+                                <rect key="frame" x="20" y="192" width="286" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96942414889999995" blue="0.79587719349999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Me" id="0o9-Cy-8Nd">
-                        <barButtonItem key="leftBarButtonItem" title="Clear" id="2sO-C2-9MN"/>
-                        <barButtonItem key="rightBarButtonItem" title="Send" style="done" id="e9B-kb-JOf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="2sO-C2-9MN">
+                            <connections>
+                                <action selector="onClearButtonTap:" destination="iks-Oy-GfA" id="VBI-NT-zYF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" style="done" id="e9B-kb-JOf">
+                            <connections>
+                                <action selector="onSendButtonTap:" destination="iks-Oy-GfA" id="JfO-J4-DTR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="6GH-hu-v3a" id="5Nv-7J-dAa"/>
+                        <outlet property="messageTextView" destination="efh-at-ZXO" id="zbt-ON-kIU"/>
+                        <outlet property="nameTextField" destination="LcR-9M-Wfx" id="rTr-qG-VeP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szq-Ih-Tpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
