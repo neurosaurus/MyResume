@@ -206,7 +206,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Contact Me" id="0o9-Cy-8Nd"/>
+                    <navigationItem key="navigationItem" title="Contact Me" id="0o9-Cy-8Nd">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="2sO-C2-9MN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send" style="done" id="e9B-kb-JOf"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szq-Ih-Tpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
