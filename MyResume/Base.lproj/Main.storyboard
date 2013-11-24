@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="475" y="1778"/>
         </scene>
-        <!--View Controller-->
+        <!--Social Links Web View Controller-->
         <scene sceneID="riO-A6-gJd">
             <objects>
-                <viewController id="xoF-sI-RSb" sceneMemberID="viewController">
+                <viewController id="xoF-sI-RSb" customClass="SocialLinksWebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQY-1V-5cv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,6 +137,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="djm-Sv-0cJ"/>
+                    <connections>
+                        <outlet property="webView" destination="72y-XR-3Yj" id="EK2-dD-5Ex"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwZ-6u-PRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +165,7 @@
         <scene sceneID="WEe-qo-Vs2">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="YnP-fm-OSP" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="FJI-gL-6aL">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

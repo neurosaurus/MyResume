@@ -22,6 +22,7 @@
 		A74966ED18412FFD0016A7A5 /* MyResumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74966EC18412FFD0016A7A5 /* MyResumeTests.m */; };
 		A74966F91841444B0016A7A5 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74966F81841444B0016A7A5 /* AboutMeViewController.m */; };
 		A74966FC184169880016A7A5 /* SocialLinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74966FB184169880016A7A5 /* SocialLinksTableViewController.m */; };
+		A7496700184282C60016A7A5 /* SocialLinksWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74966FF184282C60016A7A5 /* SocialLinksWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		A74966F81841444B0016A7A5 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		A74966FA184169880016A7A5 /* SocialLinksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLinksTableViewController.h; sourceTree = "<group>"; };
 		A74966FB184169880016A7A5 /* SocialLinksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLinksTableViewController.m; sourceTree = "<group>"; };
+		A74966FE184282C60016A7A5 /* SocialLinksWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLinksWebViewController.h; sourceTree = "<group>"; };
+		A74966FF184282C60016A7A5 /* SocialLinksWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLinksWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 		A74966F6184143F90016A7A5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A74966FE184282C60016A7A5 /* SocialLinksWebViewController.h */,
+				A74966FF184282C60016A7A5 /* SocialLinksWebViewController.m */,
 				A74966F71841444B0016A7A5 /* AboutMeViewController.h */,
 				A74966F81841444B0016A7A5 /* AboutMeViewController.m */,
 				A74966FA184169880016A7A5 /* SocialLinksTableViewController.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7496700184282C60016A7A5 /* SocialLinksWebViewController.m in Sources */,
 				A74966FC184169880016A7A5 /* SocialLinksTableViewController.m in Sources */,
 				A74966D218412FFD0016A7A5 /* AppDelegate.m in Sources */,
 				A74966F91841444B0016A7A5 /* AboutMeViewController.m in Sources */,
