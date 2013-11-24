@@ -9,6 +9,7 @@
 #import "SocialLinksWebViewController.h"
 
 @interface SocialLinksWebViewController ()
+
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
@@ -27,7 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.title = self.serviceName;
+    NSURL *url = [NSURL URLWithString:self.socialURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
