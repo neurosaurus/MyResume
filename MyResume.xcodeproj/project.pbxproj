@@ -132,7 +132,6 @@
 				A74966D318412FFD0016A7A5 /* Main.storyboard */,
 				A74966D918412FFD0016A7A5 /* Images.xcassets */,
 				A74966F6184143F90016A7A5 /* ViewControllers */,
-				A74967041842B6650016A7A5 /* Vendors */,
 				A74966C818412FFD0016A7A5 /* Supporting Files */,
 			);
 			path = MyResume;
@@ -180,21 +179,6 @@
 				A74967021842B2BA0016A7A5 /* ContactMeViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		A74967041842B6650016A7A5 /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-				A74967051842B6710016A7A5 /* Sendgrid */,
-			);
-			name = Vendors;
-			sourceTree = "<group>";
-		};
-		A74967051842B6710016A7A5 /* Sendgrid */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Sendgrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
