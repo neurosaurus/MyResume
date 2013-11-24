@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27EAFCB26F0248CEABEECD7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D777EE70FC341DE8B538803 /* libPods.a */; };
 		A74966C218412FFD0016A7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74966C118412FFD0016A7A5 /* Foundation.framework */; };
 		A74966C418412FFD0016A7A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74966C318412FFD0016A7A5 /* CoreGraphics.framework */; };
 		A74966C618412FFD0016A7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74966C518412FFD0016A7A5 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9B903EB2B84135878DD6A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3D777EE70FC341DE8B538803 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74966BE18412FFD0016A7A5 /* MyResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74966C118412FFD0016A7A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A74966C318412FFD0016A7A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +75,7 @@
 				A74966C418412FFD0016A7A5 /* CoreGraphics.framework in Frameworks */,
 				A74966C618412FFD0016A7A5 /* UIKit.framework in Frameworks */,
 				A74966C218412FFD0016A7A5 /* Foundation.framework in Frameworks */,
+				27EAFCB26F0248CEABEECD7C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,7 @@
 				A74966E618412FFD0016A7A5 /* MyResumeTests */,
 				A74966C018412FFD0016A7A5 /* Frameworks */,
 				A74966BF18412FFD0016A7A5 /* Products */,
+				0B9B903EB2B84135878DD6A4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +119,7 @@
 				A74966C318412FFD0016A7A5 /* CoreGraphics.framework */,
 				A74966C518412FFD0016A7A5 /* UIKit.framework */,
 				A74966E018412FFD0016A7A5 /* XCTest.framework */,
+				3D777EE70FC341DE8B538803 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 				A74966D318412FFD0016A7A5 /* Main.storyboard */,
 				A74966D918412FFD0016A7A5 /* Images.xcassets */,
 				A74966F6184143F90016A7A5 /* ViewControllers */,
+				A74967041842B6650016A7A5 /* Vendors */,
 				A74966C818412FFD0016A7A5 /* Supporting Files */,
 			);
 			path = MyResume;
@@ -175,6 +182,21 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		A74967041842B6650016A7A5 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				A74967051842B6710016A7A5 /* Sendgrid */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		A74967051842B6710016A7A5 /* Sendgrid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sendgrid;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A74966F018412FFD0016A7A5 /* Build configuration list for PBXNativeTarget "MyResume" */;
 			buildPhases = (
+				BEA9CF9D5F354CE284017820 /* Check Pods Manifest.lock */,
 				A74966BA18412FFD0016A7A5 /* Sources */,
 				A74966BB18412FFD0016A7A5 /* Frameworks */,
 				A74966BC18412FFD0016A7A5 /* Resources */,
+				3231AEF898164DCE84D7030E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +290,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3231AEF898164DCE84D7030E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA9CF9D5F354CE284017820 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A74966BA18412FFD0016A7A5 /* Sources */ = {
@@ -401,6 +458,7 @@
 		};
 		A74966F118412FFD0016A7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9B903EB2B84135878DD6A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -414,6 +472,7 @@
 		};
 		A74966F218412FFD0016A7A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9B903EB2B84135878DD6A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -486,6 +545,7 @@
 				A74966F218412FFD0016A7A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A74966F318412FFD0016A7A5 /* Build configuration list for PBXNativeTarget "MyResumeTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +554,7 @@
 				A74966F518412FFD0016A7A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
