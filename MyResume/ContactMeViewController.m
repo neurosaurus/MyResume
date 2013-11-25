@@ -7,6 +7,7 @@
 //
 
 #import "ContactMeViewController.h"
+#import "sendgrid.h"
 
 @interface ContactMeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
