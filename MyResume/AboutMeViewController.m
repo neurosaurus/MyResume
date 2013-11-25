@@ -25,6 +25,8 @@
     self.scrollView.contentSize = CGSizeMake(width, height);
     self.imageContainerView.layer.borderWidth = 1.0;
     self.imageContainerView.layer.borderColor = [UIColor groupTableViewBackgroundColor].CGColor;
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 88, 0);
+    
 }
 
 @end
