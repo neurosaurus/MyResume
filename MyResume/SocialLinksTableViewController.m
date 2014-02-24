@@ -23,8 +23,9 @@
 {
     [super viewDidLoad];
     
-    self.socialServices = @[@"LinkedIn", @"Facebook", @"Twitter", @"Github"];
-    self.socialURLs = @[@"http://www.linkedin.com/in/triptagupta",
+    self.socialServices = @[@"Blog", @"LinkedIn", @"Facebook", @"Twitter", @"Github"];
+    self.socialURLs = @[@"neurosaurus.github.io",
+                        @"http://www.linkedin.com/in/triptagupta",
                         @"https://www.facebook.com/ladoo3",
                         @"https://twitter.com/triptagupta",
                         @"https://github.com/neurosaurus"];
